@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <!-- A tag div não é inline, ela sempre tem display block 
+  --> 
+  <div id="container">
+    <div id="profile">
+      <img 
+        src="assets/avatar.png"
+        alt="Foto de Mayk Brito sorrindo, usando óculos de grau."
+        />        
+        <!-- alt é descrição da imagem selecionada em src, quando não acha
+          a imagem é exibido a descrição inserida em alt.  --> 
+        <p>@maykbrito</p>
+    </div>
+
+    <div id="switch" onclick="toggleMode()">
+      <button></button>
+      <span></span>
+
+    </div>
+
+    <ul>
+      <li>
+        <a href="#">Inscrever-se no NLW</a>
+      </li>
+      
+      <li>
+        <a href="#">Baixar meu e-book</a>
+      </li>
+      <!-- target="_blank" é para abrir o link em uma nova guia e continuar
+      com a minha pagina aberta -->
+      <li>
+        <a href="https://sortegol.com" target="_blank">Ver meu portfólio</a>
+      </li>
+
+      <li>
+        <a href="https://craque.bet" target="_blank">Conehça o Explorer</a>
+      </li>
+
+    </ul>
+    <div id="social-links">
+      <!-- essas tag de ícones necessita que seja inserido os srcipts perto
+      do fechamento do BODY, conforme inserido abaixo -->
+     
+      <a href="https://github.com" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+    
+      <a href="https://instagram.com" target="_blank">
+      <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+    
+      <a href="https://youtube.com" target="_blank">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+    
+      <a href="https://linkedin.com" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+      
+    </div>
+
+    <footer>
+      Feito com ♥ pela <a href="https://rocketseat.com.br/">Rocketseat</a>
+
+    </footer>
+  </div>
+
+
+  <!-- srcipts abaixo para aplicação dos ícones quando não se usa framework IONIC 
+  "If you're using Ionic Framework, Ionicons is packaged by default, so no installation is necessary. Want to use Ionicons without Ionic Framework? Place the following <script> near the end of your page, right before the closing </ body> tag, to enable them." --> 
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
